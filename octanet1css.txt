@@ -1,122 +1,105 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="index.css">
-  <title>My Landing Page</title>
-  <style>
-    body {
-      font-family:'Times New Roman', Times, serif;
-      background-color: #f1f1f1;
-      margin: 0;
-      padding: 0;
-    }
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+/* Apply a background color and text color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: red;
-      color: #fff;
-    }
+/* Style the header and navigation */
+header {
+    background-color: #333;
+    color: red;
+    padding: 10px 0;
+}
 
-    h1 {
-      font-size: 32px;
-      margin: 0;
-    }
+nav ul {
+    list-style: none;
+}
 
-    main {
-      padding: 20px;
-    }
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-    section {
-      margin-bottom: 20px;
-    }
+/* Style the hero section */
+#hero {
+    text-align: center;
+    padding: 100px 0;
+}
 
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: red;
-      color: #fff;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Welcome to My Landing Page</h1>
-    </header>
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
 
-    <main>
-      <section id="hero">
-        <div class="container">
-            <h1>Welcome to Our Landing Page</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#contact" class="btn">Get Started</a>
-        </div>
-    </section>
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-    <section id="features">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="feature">
-                <h3>Feature 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="feature">
-                <h3>Feature 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="feature">
-                <h3>Feature 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-    </section>
+/* Style the features section */
+#features {
+    background-color: #fff;
+    padding: 50px 0;
+}
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit.</p>
-        </div>
-    </section>
+.feature {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn">Submit</button>
-            </form>
-        </div>
-    </section>
-      <section>
-        <h2>Contact</h2>
-        <p>Email: contact@example.com</p>
-        <p>Phone: 123-456-7890</p>
-      </section>
-    </main>
+.feature h3 {
+    font-size: 24px;
+}
 
-    <footer>
-      &copy; 2023 My Landing Page. All rights reserved.
-    </footer>
-  </div>
-</body>
-</html>
+/* Style the contact section */
+#contact {
+    background-color: #333;
+    color: black;
+    padding: 50px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button.btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
